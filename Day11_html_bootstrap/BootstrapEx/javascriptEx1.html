@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>자바스크립트</title>
+  <style>
+
+  </style>
+</head>
+
+<body>
+  <main class="container">
+
+    <!-- onclick이 실행해야되는 문장은?
+      1. input 태그 중에 어떤 체크박스가 클릭 됬는지 알아야된다.
+      2. 클릭이 되면 클릭된 요소를 콘솔(결과창) 보이기!
+    
+    -->
+    <input type="checkbox" value="1000" onclick="clickSum(this)">1<br>
+    <input type="checkbox" value="2000" onclick="clickSum(this)">2<br>
+    <input type="checkbox" value="3000" onclick="clickSum(this)">3<br>
+
+    <h5>총 합: <span id="total">0</span></h5>
+    <!--
+    onclick=""
+    input 태그에서도 사용 가능하다.
+    마우스로 체크박스를 클릭했을 때 실행해라!
+    실행할 문장을 "" 안에 작성해야된다.
+
+    <input type="checkbox" value="1" onclick="console.log('1')">1<br>
+    <input type="checkbox" value="2" onclick="console.log('2')">2<br>
+    <input type="checkbox" value="3" onclick="console.log('3')">3<br>
+
+
+    <input type="checkbox" value="1" onclick="alert('1')">1<br>
+    <input type="checkbox" value="2" onclick="alert('2')">2<br>
+    <input type="checkbox" value="3" onclick="alert('3')">3<br>
+
+    
+    window.open('URL')
+    자바스크립트에서 새창(또는 새탭)으로 웹사이트 열어줘!
+
+    자바스크립트에서는 window 객체는 웹브라우저(크롬, 엣지, 파이어폭스...) 전체 창을 의미한다.
+      - 브라우저 창 자체를 조작하거나 정보에 접근하는 최상위 객체다!
+    
+    <input type="checkbox" value="naver" onclick="window.open('https://www.naver.com/')">naver<br>
+    <input type="checkbox" value="google" onclick="window.open('https://www.google.com/')">google<br>
+    <input type="checkbox" value="daum" onclick="window.open('https://www.daum.net/')">daum<br>
+    -->
+  </main>
+  <script src="../js/javascriptEx1.js"></script>
+</body>
+
+</html>

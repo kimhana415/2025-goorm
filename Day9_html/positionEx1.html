@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=, initial-scale=1.0">
+  <title>position</title>
+  <!-- 부트스트랩 아이콘 CDN 
+    CDN(Content Delivery Network)란?
+    즉 콘텐츠 전송 네트워크!
+    웹 페이지에서 사용되는 css,javascript같은 파일을
+    여러 지역에 분산된 서버에 저장해서 사용자에게 가장
+    가까운 서버에서 빠르게 전달해주는 시스템!
+    
+    ex) 내가 서울에서 웹 사이트 열면 서울에 있는 CDN 서버에서 파일을 전달한다.
+        그럼 미국사람이 접속하면 미국에 있는 CDN서버에서 파일 전달
+        위에 내용을 사용하면 속도도 빠르고 서버 부하를 줄일 수있다.
+  -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <style>
+    .box {
+      width: 100px;
+      height: 100px;
+    }
+
+    .box--bg1 {
+      background: red;
+    }
+
+    .box--bg2 {
+      background: blue;
+      position: relative;
+      top: 50px;
+      left: 50px;
+    }
+
+    .new-box span {
+      position: absolute;
+      background: pink;
+      color: white;
+      /* 안쪽으로 여백을 줘야된다. */
+      padding: 10px;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+
+<body>
+<!-- position : 요소 위치 정할 수있다.
+                얘(태그)를 어디에 붙일지 정해줘!
+    relative : 원래 자리에서 살짝 움직여!
+
+    <h2>relative</h2>
+    <div class="box box--bg1">
+      box1 (기준)
+      <div class="box box--bg2">
+        box2 (이동)
+      </div>
+  </div>
+-->
+  <div class="wrap">
+    <img src="https://prs.ohousecdn.com/apne2/content/uploads/cards/project/v1-368601774801024.jpg?w=512&h=342&c=c">
+
+    <div class="new-box">
+      <span>NEW</span>
+    </div>
+
+    <h2>지친 하루를 위로해주는 오후의 햇살 같은 집</h2>
+    <div>
+      <img>
+      <span>낰낰</span>
+    </div>
+    <!-- 북마크로 검색함. 우리는 이제  북마크를 눌렀을 때
+        색상이 채워지는 내용을 자바스립트로 할 예쩡! -->
+    <i class="bi bi-bookmark"></i>
+  </div>
+</body>
+</html>

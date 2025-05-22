@@ -1,0 +1,55 @@
+/* flexEx2.css */
+
+div{
+  border: 1px solid lightgray;
+}
+
+#wrap{
+  display: flex;
+
+}
+#box-left{
+  flex-grow: 2;
+}
+
+#box-right div{
+
+  margin: 20px;
+  padding: 20px 30px;  /* 20 10 상하 좌우
+                      10 20 30 40 위 오른쪽 아래 왼쪽 시계방향
+                      */
+
+  border: 1px solid red;
+  border-radius: 100%;
+  text-align: center;
+}
+
+.bi {
+  cursor: pointer;
+}
+
+.heart-red {
+  color: red;
+}
+
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+
+.bookmark-blue {
+  color: blue;
+}
+
+.chat-green {
+  color: green;
+}
+
+#box-right p{
+  margin: 0;
+}
+
+#boxleftauthor{
+  display: flex; /*flex 레이아웃은 기본적으로 가로 정렬이 된다.*/
+  justify-content: space-between;
+}

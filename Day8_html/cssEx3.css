@@ -1,0 +1,28 @@
+/* 파일명: cssEx3.css */
+html {
+  /* 만약 html 기준을 변경하고 싶으면 변경 */
+  font-size: 20px;
+}
+.parent1 {
+  font-size: 1rem; /* 20px * 1 = 20px */
+  font-weight: bold;
+}
+.child1 {
+  font-size: 1.5rem; /* 20px * 1.5 = 30px */
+  background-color: firebrick;
+}
+
+
+/* body {
+  font-size: 16px;
+  text-align: center;
+} */
+
+.parent {
+  font-size: 1.5em; /* 16px * 1.5 = 24px */
+  font-weight: bold;
+}
+.child {
+  font-size: 1.5em; /* 24px * 1.5 = 36px */
+  background-color: pink;
+}

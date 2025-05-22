@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>레이아웃</title>
+  <!-- SEO
+  검색엔진 최적화 뜻함
+  웹 사이트가 구글, 네이버 같은 거색 엔진에서
+  더 높은 순위에 나타나도록 웹사이트 구조나 콘텐츠를
+  최적화하는 기술!
+
+  검색엔진 작동 방식
+    - 검색자가 어떤 키워드를 입력하면 관련성 높은 페이지를 순위별로 나열한다.
+    - 페이지의 구조와 내용을 인덱싱합니다.
+    - 구글 인터넷을 돌아다니며 웹 페이지를 크롤링
+
+  SEO를 잘한다는건?
+    - 검색 결과에서 상위에 노출되도록 설계했다는 뜻!
+
+  SEO 3가지 단계
+    - 기술적 SEO : HTML, meta, 속도, 모바일 최적화 등
+    - 콘텐츠 SEO : 키워드, 제목, 본문 내용의 구성
+    - 외부 SEO: 다른 사이트에서 얼마나 많이 링크 됬는지
+  -->
+
+  <!-- 파비콘(타이틀 옆에 작은 아이콘) 설정  -->
+  <link rel="shortcut icon" href="https://item.kakaocdn.net/do/a7fd7c0630f8aea8419a565fb2773bbc82f3bd8c9735553d03f6f982e10ebe70">
+
+  <!-- 검색이 잘 될 수 있도록 키워드, 내용 -->
+  <meta name="desciption" content="protfolio for software enginner seohee">
+  <meta name="author" content="seohee">
+
+  <!-- SNS 공유할 때 예쁘고 깔끔하게 카드형 링크 미리보기 생성한다.
+    OG(Open Graph Data)
+  -->
+  <meta property="og:title" content="seohee의 포트폴리오!">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="배포 후 생성된 url">
+  <meta property="og:image" content="배포 후 생성된 이미지 url(경로)">
+
+  <link rel="stylesheet" href="css/layoutEx1.css">
+</head>
+<body>
+  <!-- 레이아웃
+    <h1>오늘은 레이아웃 배우기!</h1>
+    <h1>오늘은 레이아웃 배우기!!!!!</h1>
+
+    layout의 핵심은 block 레벨 요소들을 원하는 위치에 배열하는 것!
+    화면이나 페이지에서 각 요소(텍스트, 이미지, 버튼)를 배치하는 구조를 의미한다.
+    * 시멘틱 태그 *
+
+    wrap 하는 이유는 웹페이지의 전체 구조나 큰 블록을 묶어 레이아웃이나 스타일을 통일시킬 때 사용
+  -->
+  <div id="wrap">
+    <header>
+      <a class="logo" href="#home">
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjq9LJak45k1eZi_TyWyOSy5nU3KetpbfDluj9aty3-1WptLYlvwfZTZIOiaJtf1LPxx0WEsO-XXzOCDlPpY4ymL1Rm8tgdZ1yUOnQbsgUT8Ri1CEA12UGV7lNISQ66dAWvB7QWj0kRlOBa/s1600/3034007-slide-s-3-whats-the-difference-between-a-logo-and-a-symbol.jpg">
+      </a>
+
+      <nav>
+        <ul class="nav-items">
+          <li><a href="#Home">Home</a></li>
+          <li><a href="#News">News</a></li>
+          <li><a href="#Content">Content</a></li>
+          <li><a href="#About">About</a></li>
+        </ul>
+      </nav>
+    </header>
+  </div>
+</body>
+</html>

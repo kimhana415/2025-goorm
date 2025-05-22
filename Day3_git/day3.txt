@@ -1,0 +1,49 @@
+로컬 컴퓨터
+ - 내 컴퓨터
+
+로컬 저장소
+ - 냄 컴퓨터 안에 저장공간
+
+원격 저장소
+ - 온라인에 내 가상적인 컴퓨터
+
+GitHub
+ - 주로 개인 혹은 사이드 프로젝트
+ - 세계 최대 규모의 git 저장소, 게다가 무료 서버 저장소 지원
+
+GitLab : 주로 회사
+ - private 한 git 원격 저장소를 만들 수 있는 서비스
+ - 유료, 보안성을 중요 시 하느 회사(프로그램 코드)
+
+서버(유튜브, 네이버, 구글)
+ - 정보를 제공하는 컴퓨터
+
+클라이언트(나)
+ - 정보를 요청하는 컴퓨터
+
+git init
+ - 프로젝트 버전 관리 시작
+ - 프로젝트 폴더 (Day3_Git) 처음 열고 터미널에 이 명령어를 치고 시작한다.
+
+git push -u 방금 입력한 주소를 기억하라
+
+git push -u origin <올라갈 저장소 이름>
+
+
+
+이슈
+- error: src refspec main does not match any
+  - main 브랜치가 존재하지 않거나 로컬에서 커밋이 아직 되지 않았을 떄 발생하는 에러
+
+- error: failed to push some refs to 'https://github.com/kimhana415/frontend0512.git'
+  - 내가 내 컴퓨터에 작성한 코드를 github에 올릴려고 했는데, github에 이미 누군가 올린 코드나 파일이 있을때 로컬과 원격 저장소가 충돌나서 에러가 발생한다.
+
+- fatal: Need to specify how to erconcile divergent branches.
+  - 로컬 브랜치와 원격 브랜치 간에 커밋내역이 달라서 발생하는 에러
+  - 병합(merge) 기본적으로 사용!
+
+- fatal: refusing to merge unrelated histories
+  - 서로 다른 히스토리를 가진 두개의 리포지토리를 병합하려고 할 때
+  - 해결 방법 (서로 다른 내용을 가진 작업공간들을 강제로 허용하는 것!)
+    git pull origin main --allow-unrelated-histories
+    :wq  -> 현재 내용을 저장하고 파일을 종료한다.

@@ -1,0 +1,94 @@
+git 버전 확인하는 명령어(컴퓨터한테 지시)
+git -v
+
+사용자 정보 저장
+git config --global user.email "khnaa415@gmail.com"
+git config --global user.name "kimhana415"
+
+원격저장소(gitHub)
+git init - 새로운 git 저장소 생성
+ls -la   - 폴더 구조확인
+clear    - 맥에서 화면 지우기
+cls      - 윈도우에서 화면 지우기
+
+- 원격저장소 확인 
+  - git remote -v
+- 원격저장소 연결(추가)
+  - git remote add origin [원격 저장소 url]
+                          https://github.com/kimhana415/frontend0507.git
+
+- gitHub의 저장소를 변경
+  git remote set-url origin [새로운 원격 저장소 url]
+
+원격 저장소 세부 정보 확인
+  - git remote show origin
+
+error 정리
+  error: remote origin already exists.
+  - 현재 저장소에 이미 원격 저장소가 설정되어 있다. 근데 또 추가를 하려고하니 에러가 발생한다.
+
+git add 파일명 (ex. Day2.txt)
+git commit
+
+---------------------------
+여러개의 파일에 추가된 내용을 저장할 때
+git add 파일명1 파일명2
+  - 여러개의 파일을 동시에 스테이징 할 수 있다.
+  - staging area는 commit을 하기 전에 commit 할 파일들을 골라 놓는 곳!
+
+작업폴더 ->  git add -> staging area -> git commit -> 저장소
+
+git add .
+  - 작업 폴더의 모든 파일을 전부 스테이징하고 싶을 때 사용함
+뒤로가기 명령어
+cd ../
+-----------------------------------
+cd 이동
+cd 폴더명
+-----------------------------------
+git status (git 상태창)
+
+파일에 변경된 내용 기록(log)
+git log
+  로그 요약(한줄로 출력): log --oneline 옵션
+
+변경된 내용만 확인
+- git diff
+- git difftool
+- git difftool 커밋id (ex: 0103763)
+변경된 내용을 그림으로 편하게 볼 수 있는 도구를 하나 알려줌
+라이브러리 (도구)
+  - Git Graph
+
+git branch 브랜치이름
+ - 프로젝트 복사본을 만들어서 거기에 먼저 개발하는 것!
+ - 파일을 병합하는 merge 3가지
+ - 삭제
+
+git?
+  - 소스 코드의 변경 이력 기록 여러 개발자가 동시에 같은 프로젝트에서 작업을 할 수 있도록 도와주는 것!
+
+gitHub?
+  - Git을 기반으로 한 클라우드 기반 소스 코드 호스팅 플랫폼
+  - 원격 저장소 관리, 협업, 코드리뷰, 이슈관리
+
+Repository
+  - 프로젝트의 소스 코드와 히스토리를 저장하는 공간
+
+Pull Request
+  - 변경 사항을 제안하고, 코드 리뷰 및 병합을 요청하는 기능
+
+GitHub 동작하는 과정
+  - 로컬(내컴퓨터) 코드 변경 -> add, commit -> push -> 원격 저장소에 반영
+  - 팀원은 pull 명령어를 이용해서 최신 코드를 받아오면 된다.
+
+  - 코드 병합은 merge 또는 rebase를 통해 이루어진다.
+
+------------------------------------------------------
+git add랑 직접 팡리 추가하는거랑 차이
+작업 폴더
+  - 우리가 직접 파일도 추가하고 수정하고 삭제할 수 있는 비쥬얼코드의 폴더 안!
+  - 이 파일들은 git이 모르는 상태다!
+
+git add 파일명
+.git폴더 안으로 이동

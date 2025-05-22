@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>자바스크립트</title>
+</head>
+<body>
+  <!-- 자바스크립트?
+    - 웹 브라우저에서 동작하는 인터프리터 방식의 프로그래밍
+      웹 페이지에서 동적인 동작과 로직을 추가한다.
+    - 자바스크립트는 움직이을 주는 것! 행동
+  -->
+  <h1>자바스크립트</h1>
+
+  <h1>첫번째 시간</h1>
+
+  <h1 id="hello">어렵긴 한데 ~ 최대한 쉽게 해봅시다!</h1>
+
+  <!-- HTML을 움직일 수 있도록 조작을 해야된다.
+    1. HTML 문서를 알고 있어야된다.
+  -->
+  <script>
+    /* 행동을 하는 자바스크립트 코드를 작성하면 된다.
+    document는 HTML 문서를 조작할 수 있게 도와주는 객체(물건)
+
+    자바스크립트 행동
+    1. document html 코드를 읽는다.
+    2. 읽고 나서 태그를 찾아라! getElementById()
+    3. 찾은 다음에 바꿔라!(행동)
+    */ 
+  
+    console.log(document.getElementById('hello').innerHTML='안녕'); 
+
+  </script>
+</body>
+</html>

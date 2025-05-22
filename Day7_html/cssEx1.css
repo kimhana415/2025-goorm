@@ -1,0 +1,20 @@
+/* 파일명: cssEx1.css
+
+CSS (Cascading Style Sheets)
+  - CSS는 HTML로 만든 웹 페이지를 디자인 하기 위해서 스타일링하는 언어다!
+
+Cascading?
+  - 계단식
+  - 여러개의 스타일이 충돌 될 때 어떤 스타일이 우선 적용 될지 결정하는 규칙
+*/
+
+body {
+  background-color: cornflowerblue;
+}
+
+a {
+  /* 기본적으로 웹 사이트의 기본 글자 크기는 16px로 지정
+  rem 기본 웹 사이트의 글자 크기를 기준으로 배수로 커진다.
+  2rem -> 16 * 2 = 32px */
+  font-size: 2rem;
+}

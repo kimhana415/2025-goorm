@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS 프로퍼티 값 단위</title>
+  <link rel="stylesheet" href="cssEx3.css">
+</head>
+<body>
+  <h1>CSS 프로퍼티 값 단위</h1>
+  <!-- px : 절대 단위 1px 화소 1개 크기
+    디지털 화면에서 고정된 크기를 의미한다.
+    보통 1px은 화면에 보이는 작은점 하나 -->
+  <p>px : 절대 단위 1px 화소 1개 크기</p>
+
+  <!-- em : 배수 단위로 상대 단위, 요소에 지정된 사이즈에 상대적 사이즈 설정
+    부모의 크기 배수, 중첩되면 점점 커진다. -->
+  <p>em : 배수 단위로 상대 단위, 요소에 지정된 사이즈에 상대적 사이즈 설정</p>
+  <div>
+    Font: size: 1.2em -> 14px * 1.2 = 16.8px
+  </div>
+  <div class="parent">
+    부모 (1.5em = 24px)
+    <div class="child">
+      자식 (1.5em = 36px)
+    </div>
+  </div>
+
+  <!-- rem : 최상위 요소(html)의 사이즈를 기준으로 삼는다.
+    r의 의미는 루트다
+    기본적으로 설정을 하지 않으면 16px -->
+  <p>rem : 최상위 요소(html)의 사이즈를 기준으로 삼는다</p>
+  <div class="parent1">
+    부모 (1rem = 20px)
+    <div class="child1">
+      자식 (1.5rem = 30px)
+    </div>
+  </div>
+</body>
+</html>

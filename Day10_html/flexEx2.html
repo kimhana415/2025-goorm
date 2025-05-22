@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>오늘의 집!</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="css/flexEx2.css">
+</head>
+<body>
+  <div id="wrap">
+    <!-- 보라색 박스 만든것 -->
+    <div id="box-left">
+      <h1>간결한 레이아웃</h1>
+
+      <div id="box__left__author">
+        <div id="box__left__author__left">
+          우당탕탕 우영우!
+        </div>
+
+        <div id="box__left__author__right">
+          <button>
+            팔로우
+          </button>
+        </div>
+      </div>
+      <button onclick="darkMode()">다크모드</button>
+    </div>
+
+    <div id="box-right">
+      <div>
+        <!-- onclick = "실행할 문장()" -->
+        <i class="bi bi-heart" onclick="heartClick(this)"></i>
+        <p id="like-count">5</p>
+      </div>
+
+      <div>
+        <i class="bi bi-bookmark" onclick="bookmarkClick(this)"></i>
+        <p id="book-count">3</p>
+      </div>
+
+      <div>
+        <i class="bi bi-chat" onclick="chatClick(this)"></i>
+        <p id="chat-count">4</p>
+      </div>
+
+      <div>
+        <i class="bi bi-share"></i>
+        <p>1</p>
+      </div>
+    </div>
+  </div>
+  <script src="js/flexEx1.js"></script>
+</body>
+</html>
