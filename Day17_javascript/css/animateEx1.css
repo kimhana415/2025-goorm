@@ -1,0 +1,49 @@
+/* animateEx1.css */
+/*
+추가적인 내용입니다!
+아래처럼 css가 중복이 되면 코드의 효율성이 떨어진다.
+그래서 중복되는 코드들을 묶어서 하나의 css를 설정하는 것
+상속
+  - css
+*/
+div {
+  position: relative;
+  left: 0px;
+  margin: 2rem 0;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+}
+
+#box1 {
+  background-color: lightblue;
+}
+
+#box2 {
+  /* 어디로 이동할래? 위치를 지정 */
+  background-color: lightcoral;
+}
+
+#box3 {
+  background-color: lightgreen;
+}
+
+#loopText {
+  width: 300px;
+  font-weight: bold;
+}
+
+
+#barMain {
+  /* 메인바는 웹 브라우저를 기준으로 너비를 잡겠다. */
+  width: 100vw;
+  height: 50px;
+  border: 1px solid pink;
+}
+
+#bar {
+  width: 10px;
+  height: 100%;
+  margin: 0;
+  background-color: lightpink;
+}
