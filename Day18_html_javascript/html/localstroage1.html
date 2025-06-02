@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>로컬 스토리지</title>
+</head>
+
+<body>
+  <h1>로컬 스토리지!</h1>
+  <!-- 저장을 누르면 id를 저장한다.
+      불러오기를 누르면 id를 저장소에서 불러와서 팝업창 alert() 띄우기!
+  -->
+  <button onclick="save()">저장</button>
+  <button onclick="load()">불러오기</button>
+
+
+  <!-- 1. 패스워드 저장 -->
+  <h4>패스워드 저장하기</h4>
+  <input type="text" id="pwInput" placeholder="비밀번호">
+  <button onclick="pwSave()">비밀번호 저장</button>
+  <button onclick="pwLoad()">비밀번호 불러오기</button>
+
+  <!-- 패스워드 출력 -->
+  <p id="result"></p>
+
+
+  <!-- 2. 3초 있다가 자동으로 저장하는 코드를 작성
+      input 태그를 이용해서 입력 받는다. 이메일
+      입력 후 버튼을 클릭하면 3초 후에 자동으로 로컬 스토리지에 저장된다.
+      alert() 저장 완료! -->
+  <h3>3초 후 이메일 자동저장</h3>
+  <input type="text" id="emailInput" placeholder="이메일">
+  <button onclick="saveEmail()">3초 후 저장</button>
+
+
+  <!-- 3. Date()
+  현재 시간을 표시 실시간으로 계속!
+
+  자바스크립트에서 현재 날짜와 시간을 제공해주는 기능이다!
+  정보의 뭉태기를 우리는 객체라고한다.
+  자바스크립트에서 제공하는 기능 -> 내장 객체! 객체들은 기본적으로 첫글자는 대문자로!
+
+
+  -->
+  <h3>현재 시간 표시</h3>
+  <p id="clock">시간 로딩 중....</p>
+
+  <script src="../js/localstroage1.js"></script>
+</body>
+
+</html>
