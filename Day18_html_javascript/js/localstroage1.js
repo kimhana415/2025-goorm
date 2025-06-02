@@ -119,3 +119,35 @@ setInterval(() => {
 
   */
 }, 1000); // 1초마다 실행
+
+
+
+// kurly.js
+
+function timer(endDate, timerId) {
+  const now = new Date(); //현재 시각
+  const end = new Date(endDate); //종료 시각
+  const remainingTime = end - now; // 종료 시각 - 현재 시각 = 남은 시간
+
+  // 남은 시간이 0보다 작으면 종료
+  if (remainingTime <= 0) {
+    document.getElementById('timer').textContent = "00 : 00 : 00";
+    clearInterval(timerId);
+    return;
+  }
+
+  const hours = Math.floor((remainingTime % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  const minutes = Math.floor((remainingTime % (1000 * 60 * 60)) / (1000 * 60));
+  const seconds = Math.floor((remainingTime % (1000 * 60)) / 1000);
+
+  const pad = (n) => String(n).padStart(2, '0'); //시간 앞에 0 붙이기
+
+  document.getElementById('timer').textContent
+    = `${pad(hours)} : ${pad(minutes)} : ${pad(seconds)}`;
+}
+
+const endDate = new Date('2025-06-03T23:59:59').getTime();
+
+const timerId = setInterval(() => {
+  timer(endDate, timerId);
+}, 1000);
